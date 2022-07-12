@@ -13,3 +13,13 @@ const apenasPreco = produto => produto.preco
 const resultado = carrinho.map(paraObjeto).map(apenasPreco)
 
 console.log(resultado);
+
+// implementando map
+
+Array.prototype.map0 = function(callback) {
+    const newArray = []
+    for (let i = 0; i < this.length; i++) {
+        newArray.push(callback(this[i], i, this))
+    }
+    return newArray
+}
