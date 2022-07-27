@@ -1,6 +1,15 @@
 {
+  "name": "projrto",
+  "version": "1.0.0",
+  "description": "src/servidor.js",
+  "scripts": {
+    "start": "nodemon"
+  },
+  "main": "",
   "dependencies": {
-    "express": "4.16.2",
-    "nodemon": "^2.0.19"
-  }
+    "express": "4.16.2"
+  },
+  "devDependencies": {
+    "nodemon": "1.14.11"
+   }
 }
