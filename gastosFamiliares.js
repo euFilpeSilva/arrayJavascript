@@ -19,7 +19,7 @@ function calculoReceitaFinal() {
     let saidas = sum(familia.despesas)  
 
     const total = entradas - saidas
-    const validaValor = total >= 0
+    const validaValor = total >= 0          
     let balancoResultado ="negativo"
 
     if(validaValor) {
