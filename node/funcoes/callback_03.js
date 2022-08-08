@@ -1,3 +1,5 @@
+const { isAnyArrayBuffer } = require("util/types");
+
 const nums = [1, 2, 3, 4, 5]
 const dobro = n => n * 2  //parametro representando cada numero do array
 console.log(nums.map(dobro));
@@ -32,3 +34,17 @@ const pegaNome = item => item.nome //retorna o nome de cada item do array
  const totais = carrinho.map(totalItens)
 
  console.log(totais);
+
+//  vamos implementar um map
+Array.prototype.meuMap = function(fn) {
+    const novoArray = []
+
+    for(let i = 0; i < this.length; i++) {
+        novoArray.push(fn(this[i], i, this)) //parametros, posição, indice e tamanho do array
+    }
+    return novoArray
+}
+
+
+const pegaNome2 = item => item.nome //retorna o nome de cada item do array
+ console.log(carrinho.meuMap(pegaNome2));
