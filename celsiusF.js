@@ -26,7 +26,7 @@ function transformDegree(degree) {
 }
 
 try {
-    console.log(transformDegree('50F'));
+    console.log(transformDegree('50F')); //agora estude expressões regulares pra colocar uma validação pra caso a pessoa coloque outras letras diferentes de C e F
     console.log(transformDegree('10C'));
     // transformDegree('50Z')
 } catch (error) {
